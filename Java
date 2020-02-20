@@ -1,0 +1,42 @@
+import java.util.Scanner;
+
+public class Videogame {
+	public static void main(String[] args) {
+		Scanner myObj = new Scanner(System.in); 
+		System.out.println("What is your name?");
+		String Name = myObj.nextLine();
+		System.out.println("Hi " + Name);
+		System.out.println("How many videogames have you played before?");
+		int num = myObj.nextInt();
+		int num2 = num + 2;
+		System.out.println("If you play these 2 games you would have played " + num2 + " games");
+		boolean review = true;
+		while (review = true) {
+			System.out.println("The following is a list of games:");
+			break;
+		}
+	}
+}
+class Smash extends Videogame {
+	public static void main(String[] args) {
+		System.out.println("This is a list of 4 smash bros characters");
+		String[] characters = {"Mario", "Luigi", "Daisy", "Peach"};
+		for (String x : characters) {
+			System.out.println(x);
+		}
+	}
+}
+class PokemonSword extends Videogame { 
+	boolean review = true;
+	int price = 90;
+	int good = 30;
+	int goodprice = price - good;
+	
+	public static void main(String[] args) {
+		if (review = true) {
+			System.out.println("This game has good reviews so I think it is worth the " + goodprice);
+		} else {
+			System.out.println("I dont think this game is worth it.");
+		}
+}
+}
